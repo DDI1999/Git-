@@ -3,7 +3,7 @@
     
     $ git remote -v
 
-    $ git remote ypp（代替符号） [github远程库地址]
+    $ git remote add ypp（代替符号） [github远程库地址]
 
     $ git remote -v
     ypp     https://github.com/DDI1999/huashanjianfa.git (fetch)
