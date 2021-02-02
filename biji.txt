@@ -1,0 +1,36 @@
+团队协作：
+本地库提交远程库：
+    
+    $ git remote -v
+
+    $ git remote ypp（代替符号） [github远程库地址]
+
+    $ git remote -v
+    ypp     https://github.com/DDI1999/huashanjianfa.git (fetch)
+    ypp     https://github.com/DDI1999/huashanjianfa.git (push)
+
+    $ git push ypp master
+
+另一个账号：
+克隆远程库到本地库：
+    $ git clone [远程库中代码github地址]
+
+再将克隆本地库的文件修改后push到远程库：
+    $ git remote -v
+    origin  https://github.com/DDI1999/huashanjianfa.git (fetch)
+    origin  https://github.com/DDI1999/huashanjianfa.git (push)
+
+原来账号拉取此账号进入团队后才能有权限push
+    $ git push arigin master
+
+原来账号将远程库修改过后的文件pull到本地库中合并在本地库上：
+    $ git remote -v
+    ypp     https://github.com/DDI1999/huashanjianfa.git (fetch)
+    ypp     https://github.com/DDI1999/huashanjianfa.git (push)
+
+    $ git fetch ypp master(拉取远程库文件)
+    $ git checkout ypp/master(切换到远程库主分支查看拉取的文件内容)
+    $ git checkout master(查看后在切换回本地库主分支进行合并)
+    $ git merge ypp/master(将远程库拉取的文件合并到本地库中)
+
+
